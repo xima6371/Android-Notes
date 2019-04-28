@@ -5,7 +5,7 @@
 1. [Java集合框架简介](<https://github.com/xima6371/Android-Notes/blob/master/Java/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6.md>)
 2. [Java GC](<https://github.com/xima6371/Android-Notes/blob/master/Java/GC.md>)
 3. [Java 常量池](<https://github.com/xima6371/Android-Notes/blob/master/Java/intern()%E4%B8%8E%E5%B8%B8%E9%87%8F%E6%B1%A0.md>)
-4. [Java四大引用]([https://github.com/xima6371/Android-Notes/blob/master/Java/强弱软虚四种引用的特点和使用场景.md](https://github.com/xima6371/Android-Notes/blob/master/Java/%E5%BC%BA%E5%BC%B1%E8%BD%AF%E8%99%9A%E5%9B%9B%E7%A7%8D%E5%BC%95%E7%94%A8%E7%9A%84%E7%89%B9%E7%82%B9%E5%92%8C%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF.md))
+4. [Java四大引用](<https://github.com/xima6371/Android-Notes/blob/master/Java/%E5%BC%BA%E5%BC%B1%E8%BD%AF%E8%99%9A%E5%9B%9B%E7%A7%8D%E5%BC%95%E7%94%A8%E7%9A%84%E7%89%B9%E7%82%B9%E5%92%8C%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF.md>)
 
 
 
