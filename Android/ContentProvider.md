@@ -1,14 +1,14 @@
 ---
 title: 内容提供者简介
-date: 2019-04-174 14:39:55
+date: 2019-04-16 14:39:55
 tags: ContentProvider
 ---
 
 
 
+介绍用途和优点
+
 <!-- more -->
-
-
 
 1. ContentProvider用途
 
