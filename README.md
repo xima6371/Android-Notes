@@ -12,9 +12,16 @@
 #### Android笔记
 
 1. [Activity生命周期和启动模式](<https://github.com/xima6371/Android-Notes/blob/master/Android/Activity%E5%91%A8%E6%9C%9F%E5%92%8C%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F.md>)
+
 2. [BroadCast分类](<https://github.com/xima6371/Android-Notes/blob/master/Android/Broadcast.md>)
+
 3. [ContentProvider](<https://github.com/xima6371/Android-Notes/blob/master/Android/ContentProvider.md>)
+
 4. [Service](<https://github.com/xima6371/Android-Notes/blob/master/Android/Service%E7%AE%80%E4%BB%8B.md>)
+
+5. [Handler](<https://github.com/xima6371/Android-Notes/blob/master/Android/Handler%E4%B8%8E%E6%B6%88%E6%81%AF%E6%9C%BA%E5%88%B6.md>)
+
+   
 
 
 

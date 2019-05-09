@@ -1,6 +1,6 @@
 ---
 title: Handler与消息机制
-date: 2019-04-28 23:06:25
+date: 2019-04-29 23:06:25
 tags: Handler
 ---
 
@@ -60,6 +60,8 @@ private static void prepare(boolean quitAllowed) {
     }
 ```
 
+
+
 创建Looper对象时，Looper会在构造器中初始化一个MessageQueue对象，并持有当前线程的引用。
 
 ```java
@@ -68,6 +70,8 @@ private Looper(boolean quitAllowed) {
         mThread = Thread.currentThread();
 	}
 ```
+
+
 
 Looper.loop()后开始循环，不断的从Quene中取出Message，然后通过Message中Handler引用进行分发Message，最终将分发的Message回收到消息池进行复用。
 
@@ -102,6 +106,8 @@ Looper.loop()后开始循环，不断的从Quene中取出Message，然后通过M
         }
     }
 ```
+
+
 
 Looper.quit()和quitSafely()调用后线程结束，停止工作。
 
@@ -139,7 +145,7 @@ safe = false时，不管有没有轮到信息，一律移除
 
 
 
-工作机制
+**工作机制**
 
 - Handler通过sendMessage()发送Message到MessageQueue队列；
 - Looper通过loop()，不断提取出达到触发条件的Message，并将Message交给target来处理；
@@ -188,6 +194,8 @@ new Thread(new Runnable() {
 
    `Looper.loop()`调用后，会不断的从queue中的获取Message，然后通过Message中持有的Handler引用，调用`Handler.dispatchMessage(msg)`，从而将Message分发出去，而在该方法中，会根据Message有无设置Callback，Handler有无设置CallBack，从而调用不同的handleMessage(msg)进行处理。
 
+   
+
 **消息分发的优先级：**
 
 - Message的回调方法：`message.callback.run()`，优先级最高；
@@ -216,15 +224,7 @@ new Thread(new Runnable() {
 
 6. 为什么Handler使用的是`SystemClock.uptimeMillis()`开机到现在的时间
 
-   该方法计算的时间不包括休眠的时间，而Handler在工作线程发送消息给主线程，会受到阻塞，挂起状态的影响，当主线程处于阻塞时，发送的消息必然会唤醒主线程，这样会使主线程抢占了别的线程的资源。这样会影响用户体验。是不好的
-
-222
-
-
-
-
-
-
+   该方法计算的时间不包括休眠的时间，而Handler在工作线程发送消息给主线程的过程中，会受到阻塞，挂起状态的影响，当主线程处于阻塞时，发送的消息必然会唤醒主线程，这样会使主线程抢占了别的线程的资源。这样会影响用户体验。是不好的
 
 
 
